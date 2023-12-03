@@ -1,0 +1,17 @@
+
+## next-simple-e-commerce-with-typescript-and-stripe
+
+### features/actions
+1.  CRUD operations
+2.  make payment with stripe js (backend not integrate yet)
+
+### technologies used
+1.  next js
+2.  stripe
+3.  typescript
+
+### completed tasks
+1.  CRUD operations
+
+### pending tasks
+1.  make payment with stripe js (backend not integrate yet)
