@@ -15,6 +15,9 @@ const Cart = () => {
       removeFromCart(productId);
     }
   };
+
+  const checkout = async () => {};
+
   return (
     <div className="border p-4 rounded-md">
       <h3 className="text-center capitalize font-medium mb-5">Your Cart</h3>
@@ -43,8 +46,14 @@ const Cart = () => {
         </ul>
       )}
 
-      <p className="font-medium my-4">Total Amount: ${totalAmount.toFixed(2)}</p>
-      <button className="bg-green-500 px-4 py-2 rounded capitalize hover:ring-1 hover:ring-yellow-50">buy now</button>
+      {cart?.length > 0 && (
+        <>
+          <p className="font-medium my-4">Total Amount: ${totalAmount.toFixed(2)}</p>
+          <button onClick={checkout} className="bg-green-500 px-4 py-2 rounded capitalize hover:ring-1 hover:ring-yellow-50">
+            buy now
+          </button>
+        </>
+      )}
     </div>
   );
 };

@@ -42,6 +42,7 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
 
   const decrementQuantity = (productId: string) => {
     const updatedCart = cart.map((item) => (item.id === productId ? { ...item, quantity: item.quantity > 0 ? item.quantity - 1 : 0 } : item));
+
     const filteredCart = updatedCart.filter((item) => item.quantity > 0);
     setCart(filteredCart);
   };

@@ -1,6 +1,11 @@
 
 ## next-simple-e-commerce-with-typescript-and-stripe
 
+### =========references===========
+-tutorials
+https://www.youtube.com/watch?v=-fV7D8HB3u4
+
+
 ### features/actions
 1.  CRUD operations
 2.  make payment with stripe js (backend not integrate yet)
